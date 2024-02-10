@@ -7,23 +7,26 @@
 
 <meta property="og:site_name" content="Nozomu Games" />
 <meta property="og:image" content="https://nozomugames.com/images/opengraph.png" />
-<meta property="og:image:width" content="1293" />
-<meta property="og:image:height" content="727" />
 <meta property="og:title" content="Nozomu Games" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="Made some games. Will make more." />
 <meta name="description" content="Made some games. Will make more." />
 <meta property="og:url" content="https://nozomugames.com" />
 
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Nozomu Games" name="twitter:title">
+<meta content="https://nozomugames.com/images/opengraph.png" name="twitter:image">
+
 <title>Nozomu Games</title>
+<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 <link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="index.css?v=1.1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
+<div class="main">
     <header>
         <div class="header-logo">
             <img src="./images/logo.png" alt="nozomu-games-logo">
@@ -42,8 +45,8 @@
         <h2>We make games packed with surprises, unique mechanics and novel experiences.</h2>
       </section>
       
-      <section id="robot-detour">
-        <a class="game-img-link" href="https://store.steampowered.com/app/2666840/Robot_Detour/">
+      <section class="robot-detour">
+        <a class="game-img-link detour-link" target="_blank" href="https://store.steampowered.com/app/2666840/Robot_Detour/">
             <img class="game-img gif" src="./images/detour-gif.gif" alt="robot-detour-gif">    
             <img class="game-img main" src="./images/detour.png" alt="robot-detour-poster">
         </a>
@@ -63,18 +66,18 @@
       </section>
       <section id="free-games-links">
         <div class="free-games-row">
-            <a class="game-img-link free-game-link" href="https://nozomu57.itch.io/fox-tower">
+            <a class="game-img-link free-game-link" target="_blank" href="https://nozomu57.itch.io/fox-tower">
                 <img class="game-img free-game" src="./images/FoxTower.png" alt="fox-tower-poster">
             </a>
-            <a class="game-img-link free-game-link" href="https://nozomu57.itch.io/forgotten-ritual">
+            <a class="game-img-link free-game-link" target="_blank" href="https://nozomu57.itch.io/forgotten-ritual">
                 <img class="game-img free-game" src="./images/ForgottenRitual.png" alt="forgotten-ritual-poster">
             </a>
         </div>
         <div class="free-games-row">
-            <a class="game-img-link free-game-link" href="https://nozomu57.itch.io/feng-shui-struggles">
+            <a class="game-img-link free-game-link" target="_blank" href="https://nozomu57.itch.io/feng-shui-struggles">
                 <img class="game-img free-game" src="./images/FengShuiStruggles.png" alt="feng-shui-struggles-poster">
             </a>
-            <a class="game-img-link free-game-link" href="https://nozomu57.itch.io/toasted-crossroads">
+            <a class="game-img-link free-game-link" target="_blank" href="https://nozomu57.itch.io/toasted-crossroads">
                 <img class="game-img free-game" src="./images/ToastedCrossroads.png" alt="toasted-crossroads-poster">
             </a>
         </div>
@@ -82,10 +85,32 @@
       <section id="more-games">
         <a target="_blank" href="https://itch.io/c/3714936/-gamejam-entries">But wait, there is more</a>
       </section>
+
+      <section class="robot-detour">
+        <a class="game-img-link detour-link" target="_blank" href="https://docs.google.com/presentation/d/1RssAM_UFJnL_3T4KvVycLWCJgWn_33aYZuRGgvbZFAM/edit?usp=sharing">
+            <img class="game-img gif" src="./images/usanimated.gif" alt="our-team-gif">    
+            <img class="game-img main" src="./images/justthetwoofus.jpg" alt="our-team">
+        </a>
+        <div class="game-info">
+            <div class="game-desc">
+                We are Ivan and Eva,
+                <br>
+                and we are Nozomu Games.
+                <br>
+                Learn about the team!
+            </div>
+        </div>
+      </section>
       
       <footer>
         <div>Nozomu Games, 2023-present</div>
       </footer>
 
+      <div id="cursor-container">
+        <div id="mouse-circle"></div>
+      </div>
+
+</div>
 </body>
+<script src="index.js"></script>
 </html>

@@ -1,3 +1,43 @@
+/* @supports (backdrop-filter: invert(100%)) or (-webkit-backdrop-filter: invert(100%)) {
+    html {
+      cursor: none;
+    }
+  } */
+
+  #cursor-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 100;
+  }
+  
+  #mouse-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: -100px;
+    top: -100px;
+    z-index: 999;
+    backdrop-filter: blur(1px) invert(100%) hue-rotate(180deg);
+    position: absolute;
+    transform: translate(-20px, -20px);
+    pointer-events: none;
+    font-size: 50px;
+    line-height: 66px;
+    text-align: center;
+    transition: all 200ms ease-out;
+  }
+  
+  @media (hover: none) {
+    #mouse-circle {
+      display: none;
+    }
+  }
+
 html {
     font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(to bottom, #104256, #17384b, #1a2f3f, #1a2634, #181e28);
@@ -5,6 +45,7 @@ html {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
+    overflow: hidden auto;
 }
 
 body {
@@ -12,6 +53,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 header {
@@ -35,6 +77,7 @@ header {
 }
 h1 {
     font-size: 1.75rem;
+    line-height: 1.25;
 }
 .socials {
     padding-bottom: 20px;
@@ -72,7 +115,7 @@ section {
     justify-content: space-around;
 }
 
-#robot-detour {
+.robot-detour {
     padding: 40px 0;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -96,12 +139,13 @@ section {
     cursor: pointer;
     transition-duration: 0.3s;
     opacity: 1;
+    box-shadow: 0px 0px 32px 0px rgb(149 184 240 / 35%);
 }
 .game-img-link:hover {
     transform: scale(1.05);
 }
-.game-img.gif {
-    box-shadow: 0px 0px 32px 0px rgb(149 184 240 / 35%);
+.game-img.main {
+    box-shadow: none;
 }
 .game-img.main:hover {
     opacity: 0;
@@ -182,7 +226,7 @@ footer {
     justify-content: center;
 }
 
-@media only screen and (min-height: 800px){
+@media screen and (min-height: 800px) and (min-width: 800px){
     .header-logo img {
         height: 140px;
     }
@@ -197,7 +241,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 695px){
+@media only screen and (max-width: 730px){
     header {
         justify-content: center;
     }
@@ -228,6 +272,8 @@ footer {
     .game-img-link {
         width: 380px;
         height: 233px;
+        max-width: calc(100vw - 40px);
+        max-height: calc(70vw - 40px);
     }
     .free-game-link{
         width: 300px;
@@ -237,5 +283,11 @@ footer {
     .game-info a img {
         width: 40px;
         height: 40px;
+    }
+    .detour-link:hover {
+        transform: none;
+    }
+    .game-img.main:hover {
+        opacity: 1;
     }
 }
