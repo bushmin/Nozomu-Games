@@ -1,8 +1,8 @@
-/* @supports (backdrop-filter: invert(100%)) or (-webkit-backdrop-filter: invert(100%)) {
+@supports (backdrop-filter: invert(100%)) or (-webkit-backdrop-filter: invert(100%)) {
     html {
       cursor: none;
     }
-  } */
+  }
 
   #cursor-container {
     position: fixed;
@@ -22,14 +22,15 @@
     left: -100px;
     top: -100px;
     z-index: 999;
-    backdrop-filter: blur(1px) invert(100%) hue-rotate(180deg);
+    -webkit-backdrop-filter: blur(1px) hue-rotate(120deg) invert(100%);
+    backdrop-filter: blur(1px) hue-rotate(120deg) invert(100%);
     position: absolute;
     transform: translate(-20px, -20px);
     pointer-events: none;
     font-size: 50px;
     line-height: 66px;
     text-align: center;
-    transition: all 200ms ease-out;
+    transition: transform 200ms ease-out, width 200ms ease-out, height 200ms ease-out;
   }
   
   @media (hover: none) {
@@ -219,7 +220,7 @@ h3 {
 
 
 footer {
-    margin-top: 100px;
+    margin: 100px 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
