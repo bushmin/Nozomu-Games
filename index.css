@@ -270,6 +270,12 @@ footer {
         width: 35px;
         height: 35px;
     }
+    .socials {
+        margin-right: 15px;
+    }
+    .social-link {
+        margin-left: 15px;
+    }
     .game-img-link {
         width: 380px;
         height: 233px;
@@ -290,5 +296,11 @@ footer {
     }
     .game-img.main:hover {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 555px){
+    html {
+        font-size: 13px;
     }
 }
