@@ -1,3 +1,5 @@
+document.documentElement.classList.add("no-cursor");
+
 const mouseCircle = document.getElementById('mouse-circle');
 document.addEventListener('mousemove', function(e) {
     mouseCircle.style.left = e.x + 'px';
