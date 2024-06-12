@@ -162,10 +162,15 @@ section {
     justify-content: center;
 }
 
+.burn-game-info{
+    padding: 20px 50px;
+}
+
 .game-desc{
     text-align: center;
     padding: 10px 0 40px;
 }
+
 .game-info a img {
     color: white;
     width: 58px;
@@ -298,6 +303,9 @@ footer {
     .game-info a img {
         width: 40px;
         height: 40px;
+    }
+    .burn-game-info{
+        padding: 20px;
     }
     .detour-link:hover {
         transform: none;
