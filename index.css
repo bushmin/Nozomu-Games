@@ -168,13 +168,23 @@ section {
 
 .game-desc{
     text-align: center;
-    padding: 10px 0 40px;
+    padding: 10px 0 20px;
+}
+.game-desc__header {
+    border-bottom: 1px solid white;
+}
+.game-desc__footer{
+    font-weight: 200;
 }
 
 .game-info a img {
     color: white;
     width: 58px;
     height: 58px;
+}
+
+.steam-link{
+    margin-left: 0;
 }
 
 #free-games-title{
@@ -265,6 +275,9 @@ footer {
     .social-link {
         margin-left: 20px;
     }
+    .steam-link{
+        margin-left: 0;
+    }
 }
 
 
@@ -288,6 +301,9 @@ footer {
     }
     .social-link {
         margin-left: 15px;
+    }
+    .steam-link{
+        margin-left: 0;
     }
     .game-img-link {
         width: 380px;
