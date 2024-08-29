@@ -170,9 +170,7 @@ section {
     text-align: center;
     padding: 10px 0 20px;
 }
-.game-desc__header {
-    border-bottom: 1px solid white;
-}
+
 .game-desc__footer{
     font-weight: 200;
 }
