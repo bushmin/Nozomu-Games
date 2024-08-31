@@ -51,7 +51,7 @@ html {
 
 body {
     padding: 20px 40px;
-    max-width: 1000px;
+    max-width: 1030px;
     margin: 0 auto;
     min-height: 100vh;
     overflow: hidden;
@@ -223,6 +223,10 @@ h3 {
     text-decoration: none;
     text-align: center;
     width: 100%;
+    font-weight: 300;
+}
+.free-game-desc strong {
+    font-weight: normal;
 }
 
 #more-games {
