@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'CraftworkGrotesk';
+    font-style:  normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("fonts/CraftworkGrotesk-Regular.woff");
+  }    
+  
+  @font-face {
+    font-family: 'CraftworkGrotesk';
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("fonts/CraftworkGrotesk-Medium.woff");
+  }  
+
+  @font-face {
+    font-family: 'CraftworkGrotesk';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("fonts/CraftworkGrotesk-Bold.woff");
+  }
+
 @supports (backdrop-filter: invert(100%)) or (-webkit-backdrop-filter: invert(100%)) {
     .no-cursor {
       cursor: none;
@@ -40,12 +64,12 @@
   }
 
 html {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'CraftworkGrotesk', 'Poppins', sans-serif;
     background-image: linear-gradient(to bottom, #104256, #17384b, #1a2f3f, #1a2634, #181e28);
     color: white;
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
     overflow: hidden auto;
 }
 
@@ -70,6 +94,7 @@ header {
     font-size: 1rem;
     padding-bottom: 20px;
     font-weight: 800;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header-logo img {
@@ -101,7 +126,7 @@ h1 {
     padding: 0 0 30px;
 }
 h2 {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.5rem;
     text-align: center;
     margin: 0 auto;
@@ -168,6 +193,7 @@ section {
     padding: 20px;
     min-width: 300px;
     font-size: 1.5rem;
+    font-weight: 700;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -185,7 +211,7 @@ section {
 }
 
 .game-desc__footer{
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .game-info a img {
@@ -202,7 +228,7 @@ section {
     padding: 40px 0 10px;
 }
 h3 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.5rem;
     text-align: center;
     margin: 0 auto;
@@ -250,7 +276,7 @@ h3 {
     color: white;
     margin-bottom: 50px;
     font-size: 1.25rem;
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
     text-decoration: none;
     border-bottom: 1px solid white;
