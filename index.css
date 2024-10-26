@@ -208,6 +208,11 @@ section {
     box-shadow: none;
 }
 
+.game-img.main:hover {
+    opacity: 0;
+}
+
+
 .game-info{
     padding: 20px;
     min-width: 300px;
@@ -389,6 +394,9 @@ footer {
     }
     .detour-link:hover {
         transform: none;
+    }
+    .game-img.main:hover {
+        opacity: 1;
     }
 }
 
