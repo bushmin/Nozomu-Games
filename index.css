@@ -134,7 +134,7 @@ h2 {
 .video {
     height: auto;
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     padding: 20px;
     margin: 30px auto -10px;
     box-sizing: border-box;
@@ -146,6 +146,25 @@ h2 {
         linear-gradient(90deg, #ffffff, #ffffff 15%, transparent 15%, transparent 85%, #ffffff 85%),
         linear-gradient(180deg, #ffffff, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%),
         linear-gradient(270deg, #ffffff, #ffffff 15%, transparent 15%, transparent 85%, #ffffff 85%);
+}
+
+#telegram-section {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+    font-size: 1.25rem;
+    gap: 4px;
+    font-weight: 300;
+}
+
+.telegram-link {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid white;
 }
 
 section {

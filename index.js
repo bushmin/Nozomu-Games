@@ -18,3 +18,13 @@ document.querySelectorAll("a").forEach((item) => {
         mouseCircle.style.transform = "translate(-20px, -20px)";
     })
 })
+
+function knowsRussian() {
+    if (navigator.languages != undefined) 
+      return navigator.languages.includes('ru-RU'); 
+    return navigator.language === 'ru-RU';
+  }
+
+if (knowsRussian() === true) {
+    document.getElementById('telegram-section').style.display = 'flex';
+}
