@@ -21,8 +21,8 @@ document.querySelectorAll("a").forEach((item) => {
 
 function knowsRussian() {
     if (navigator.languages != undefined) 
-      return navigator.languages.includes('ru-RU'); 
-    return navigator.language === 'ru-RU';
+      return navigator.languages.includes('ru'); 
+    return navigator.language.includes('ru');
   }
 
 if (knowsRussian() === true) {
