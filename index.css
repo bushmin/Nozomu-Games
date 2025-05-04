@@ -178,8 +178,8 @@ section {
 
 .robot-detour {
     padding: 40px 0;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border: 1px solid white;
+    margin-bottom: 30px;
 }
 
 
@@ -393,6 +393,11 @@ footer {
     }
     .game-img.main:hover {
         opacity: 1;
+    }
+    .robot-detour {
+        border-left: none;
+        border-right: none;
+        margin: 0 auto;
     }
 }
 
