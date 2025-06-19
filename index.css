@@ -176,7 +176,7 @@ section {
     justify-content: space-around;
 }
 
-.robot-detour {
+.main-game {
     padding: 40px 0;
     border: 1px solid white;
     margin-bottom: 30px;
@@ -189,6 +189,9 @@ section {
     height: 280px;
     position: relative;
     transition-duration: 0.3s;
+}
+.main-game-link {
+    height: 260px;
 }
 .game-img {
     position: absolute;
@@ -376,6 +379,9 @@ footer {
         max-width: calc(100vw - 40px);
         max-height: calc(70vw - 20px);
     }
+    .main-game-link {
+        height: 210px;
+    }
     .free-game-link{
         width: 300px;
         height: 240px;
@@ -388,13 +394,13 @@ footer {
     .burn-game-info{
         padding: 20px;
     }
-    .detour-link:hover {
+    .main-game-link:hover {
         transform: none;
     }
     .game-img.main:hover {
         opacity: 1;
     }
-    .robot-detour {
+    .main-game {
         border-left: none;
         border-right: none;
         margin: 0 auto;
